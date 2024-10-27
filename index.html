@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trang Tin Tức</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Trang Tin Tức</h1>
+        <ul class="nav">
+            <li><a href="#home">Trang Chủ</a></li>
+            <li><a href="#submit-news">Gửi Tin Tức</a></li>
+            <li>
+                <form class="search-form" action="#" method="get">
+                    <input type="text" placeholder="Tìm kiếm..." class="search-input">
+                    <button type="submit" class="search-button">Tìm</button>
+                </form>
+            </li>
+        </ul>
+    </header>
+    <main class="container mt-4">
+        <h2>Danh Sách Tin Tức</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://product.hstatic.net/200000722513/product/ava_d2da11ba2af941a8972ea4d4ddaf8159_1024x1024.png" class="card-img" alt="Tin tức 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#news1" class="text-decoration-none">"Laptop gaming ASUS ROG Strix SCAR 16 G634JYR RA132W" Laptop khỏe nhất thế giới vừa được ra đời</a></h5>
+                        <p class="card-text">Laptop gaming khỏe nhất vừa được ra đời của hãng ASUS thuộc dòng ROG...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.viettelstore.vn%2Fdien-thoai%2Fiphone-16-pro-max-pid339630.html&psig=AOvVaw0PjgG77a0t6p1nziaoD3X1&ust=1730088252756000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMi84I_XrYkDFQAAAAAdAAAAABAr" class="card-img" alt="Tin tức 2">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#news2" class="text-decoration-none">IP 16 đã bị rớt giá sau vài tháng ra mắt</a></h5>
+                        <p class="card-text">Sau 1 khoảng thời gian không lâu sau khi ra mắt, IP 16 đã rớt giá 1 cách...</p>
+                    </div>
+                </div>
+        </div>
+        <section id="submit-news">
+            <h2>Gửi Tin Tức Mới</h2>
+            <form>
+                <div class="form-group">
+                    <label for="title">Tiêu đề:</label>
+                    <input type="text" class="form-control" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="image">Hình ảnh (URL):</label>
+                    <input type="text" class="form-control" id="image" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">Nội dung:</label>
+                    <textarea class="form-control" id="content" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Gửi</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
